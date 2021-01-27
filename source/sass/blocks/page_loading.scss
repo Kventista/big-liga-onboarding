@@ -1,0 +1,53 @@
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.loading__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading__logo {
+  display: grid;
+  grid-template-columns: 1.2fr 0.3fr 1fr;
+  padding: 300px 0 220px;
+}
+
+.loading__animation {
+  animation: rotation 4s linear infinite normal;
+}
+
+.loading__click {
+  margin: 2rem auto;
+}
+
+.loading__click_min {
+  display: none;
+}
+
+@media all and (min-width: 370px) and (max-width: 768px) {
+  .loading__logo {
+    display: grid;
+    grid-template-columns: 1.3fr 0.3fr 1.2fr;
+    grid-gap: 1rem;
+    padding: 430px 100px;
+  }
+
+  .loading__click {
+    margin: auto;
+  }
+
+  .loading__click_min {
+    display: block;
+  }
+
+  .loading__click_max {
+    display: none;
+  }
+}

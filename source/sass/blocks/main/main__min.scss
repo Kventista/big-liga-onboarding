@@ -1,0 +1,84 @@
+@keyframes main__spin {
+  0%, 30%, 60%, 100% {
+    transform: translateY(0);
+  }
+  15%, 45%, 75% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes thunder_min {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes showFill {
+  to {
+    fill-opacity: 2;
+  }
+}
+.main__box_min {
+  background: #2c39f2;
+}
+
+.main__animation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 40% 26% 50% 26%;
+}
+
+.main__text_min {
+  margin-top: 0;
+  color: white;
+}
+
+.main__spin {
+  animation: main__spin 2s both;
+  transform-origin: center bottom;
+}
+
+#dino {
+  position: relative;
+  left: 30%;
+  color: $color-default-white;
+}
+
+////стили svg иконок для анимации
+.thunder_0 {
+  stroke: currentColor;
+  fill: currentColor;
+  fill-opacity: 0;
+}
+
+.thunder_min {
+  animation: thunder_min 2s linear forwards, showFill 200ms 1800ms linear forwards;
+  stroke-dasharray: 218 220;
+  stroke-dashoffset: 219;
+  color: $color-default-white;
+}
+#thunder_1_min {
+  position: relative;
+  bottom: -20%;
+}
+
+#thunder_3_min {
+  position: relative;
+  bottom: 30%;
+}
+
+#thunder_4_min {
+  position: relative;
+  right: 60%;
+  bottom: -70%;
+}
+
+.hidden {
+  display: none;
+}

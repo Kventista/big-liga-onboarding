@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-family--neue-machina-light;
+}
+
+.footer__cp {
+  color: #61aeed;
+  font-size: 1rem;
+}

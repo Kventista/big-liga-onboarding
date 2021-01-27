@@ -1,0 +1,17 @@
+.nav__min {
+  transition: all 1s ease-out;
+}
+
+.nav__box {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-xl;
+  margin: auto;
+  padding-top: 10%;
+}
+
+.nav__item {
+  padding-top: 3rem;
+  margin: auto;
+}
+

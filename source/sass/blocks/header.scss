@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  z-index: 1;
+  position: relative;
+}
+
+.header__menu {
+  font-size: 0.9rem;
+  line-height: 1;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__tub {
+  padding-right: 16px;
+}
+
+.header__menu_min {
+  display: none;
+}
+
+@media all and (min-width: 370px) and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu_min {
+    font-size: 0.9rem;
+    line-height: 1;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
